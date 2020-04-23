@@ -16,6 +16,16 @@
         ":automergeMinor"
       ],
       "lockFileMaintenance": { "enabled": true }
+    },
+    {
+      "packagePatterns": ["react", "react-dom"],
+      "groupName": "React",
+      "enabled": true,
+      "automerge": true,
+      "extends": [
+        ":automergeMinor"
+      ],
+      "lockFileMaintenance": { "enabled": true }
     }
   ]
 }
