@@ -18,7 +18,7 @@
       "lockFileMaintenance": { "enabled": true }
     },
     {
-      "packagePatterns": ["react", "react-dom"],
+      "packageNames": ["react", "react-dom"],
       "groupName": "React",
       "enabled": true,
       "automerge": true,
