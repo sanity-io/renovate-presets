@@ -12,6 +12,7 @@
       "groupName": "Sanity packages",
       "enabled": true,
       "automerge": true,
+      "rangeStrategy": "update-lockfile",
       "extends": [
         ":automergeMinor"
       ],
