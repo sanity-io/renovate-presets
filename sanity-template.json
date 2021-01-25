@@ -11,12 +11,19 @@
       "packagePatterns": ["^@sanity/", "sanity-plugin-*"],
       "groupName": "Sanity packages",
       "enabled": true,
-      "automerge": true,
       "rangeStrategy": "update-lockfile",
-      "extends": [
-        ":automergeMinor"
-      ],
-      "lockFileMaintenance": { "enabled": true }
+      "minor": {
+        "automerge": true
+      },
+      "patch": {
+        "automerge": true
+      },
+      "pin": {
+        "automerge": true
+      },
+      "lockFileMaintenance": {
+        "automerge": true
+      }
     },
     {
       "packageNames": ["react", "react-dom"],
