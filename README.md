@@ -7,11 +7,10 @@ A central place to add and maintain sanity.io related renovate presets (https://
 This preset will automerge all `@sanity` and `sanity-plugin-*` packages
 
 Usage:
+
 ```json
 {
-  "extends": [
-    "github>sanity-io/renovate-presets:sanity-template"
-  ]
+  "extends": ["github>sanity-io/renovate-presets:sanity-template"]
 }
 ```
 
