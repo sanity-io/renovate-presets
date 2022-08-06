@@ -9,7 +9,7 @@ Default setup:
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-presets/ecosystem:auto"]
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/auto"]
 }
 ```
 
@@ -21,8 +21,8 @@ Opt-in to Studio v3:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>sanity-io/renovate-presets/ecosystem:auto",
-    "github>sanity-io/renovate-presets/ecosystem:studio-v3"
+    "github>sanity-io/renovate-presets//ecosystem/auto",
+    "github>sanity-io/renovate-presets//ecosystem/studio-v3"
   ]
 }
 ```
@@ -34,6 +34,6 @@ Using only the preset that groups all Sanity related packages into the same PR:
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-presets/ecosystem:group"]
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/group"]
 }
 ```

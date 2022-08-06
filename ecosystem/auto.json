@@ -1,15 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>sanity-io/renovate-presets/ecosystem:base",
-    "github>sanity-io/renovate-presets/ecosystem:labels",
-    "github>sanity-io/renovate-presets/ecosystem:schedule",
-    "github>sanity-io/renovate-presets/ecosystem:strategy"
+    "github>sanity-io/renovate-presets//ecosystem/base",
+    "github>sanity-io/renovate-presets//ecosystem/labels",
+    "github>sanity-io/renovate-presets//ecosystem/schedule",
+    "github>sanity-io/renovate-presets//ecosystem/strategy"
   ],
   "packageRules": [
     {
       "updateTypes": ["major"],
-      "extends": ["github>sanity-io/renovate-presets/ecosystem:group"]
+      "extends": ["github>sanity-io/renovate-presets//ecosystem/group"]
     },
     {
       "depTypeList": ["dependencies"],
