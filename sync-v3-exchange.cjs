@@ -35,7 +35,6 @@ async function main() {
       packageNames: groups.get(followTag),
       followTag,
       schedule: ['every weekday'],
-      rangeStrategy: 'pin',
     })
   }
 
