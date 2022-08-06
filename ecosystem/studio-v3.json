@@ -3,10 +3,15 @@
   "packageRules": [
     {
       "groupName": "sanity-studio-v3",
-      "commitMessageAction": "Sync V3",
       "packageNames": ["sanity"],
-      "packagePatterns": ["^@sanity/"],
       "followTag": "dev-preview",
+      "schedule": ["every weekday"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "groupName": "sanity-studio-v3-plugins",
+      "packageNames": ["@sanity/scheduled-publishing"],
+      "followTag": "studio-v3",
       "schedule": ["every weekday"],
       "rangeStrategy": "pin"
     },
