@@ -17,8 +17,31 @@
     },
     {
       "groupName": "sanity-studio-v3-plugins",
-      "packageNames": ["@sanity/scheduled-publishing"],
+      "packageNames": [
+        "@sanity/code-input",
+        "@sanity/google-maps-input",
+        "sanity-plugin-content-calendar",
+        "@sanity/color-input",
+        "@sanity/scheduled-publishing",
+        "sanity-plugin-iframe-pane",
+        "sanity-plugin-graph-view",
+        "@sanity/document-internationalization",
+        "sanity-plugin-internationalized-array",
+        "sanity-plugin-asset-source-unsplash",
+        "sanity-plugin-dashboard-widget-cats",
+        "sanity-plugin-dashboard-widget-document-list",
+        "sanity-plugin-latex-input",
+        "sanity-plugin-markdown",
+        "sanity-plugin-mux-input"
+      ],
       "followTag": "studio-v3",
+      "schedule": ["every weekday"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "groupName": "sanity-v3-studio-plugins",
+      "packageNames": ["sanity-plugin-media"],
+      "followTag": "v3-studio",
       "schedule": ["every weekday"],
       "rangeStrategy": "pin"
     }

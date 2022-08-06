@@ -28,16 +28,15 @@ async function main() {
       (rule) => rule.followTag === followTag
     )
     if (packageRuleIndex === -1) {
-      packageRule = {
-        groupName: `sanity-studio-v3-plugins-${followTag}`,
-        packageNames: [],
-        followTag,
-        schedule: ['every weekday'],
-        rangeStrategy: 'pin',
-      }
-      packageRuleIndex = preset.packageRules.push(packageRule) - 1
+      packageRuleIndex = preset.packageRules.push({}) - 1
     }
-    preset.packageRules[packageRuleIndex].packageNames = groups.get(followTag)
+    Object.assign(preset.packageRules[packageRuleIndex], {
+      groupName: `sanity-${followTag}-plugins`,
+      packageNames: groups.get(followTag),
+      followTag,
+      schedule: ['every weekday'],
+      rangeStrategy: 'pin',
+    })
   }
 
   fs.writeFile(
