@@ -18,18 +18,14 @@ const [schema, files] = await Promise.all([
         }).on('error', (err) => reject(err))
       })
     ))(),
-  fs('*.json', { ignore: ['package*'] }),
+  fs('**/*.json', { ignore: ['package*', 'node_modules/**'] }),
 ])
 
 await Promise.all(
   files.map(async (file) => {
+    console.log(`validating ${file}`)
     const url = new URL(`./${file}`, import.meta.url)
     const json = JSON.parse(await readFile(url))
-    try {
-      console.group(`validating ${file}`)
-      await validator.validate(json, schema)
-    } finally {
-      console.groupEnd()
-    }
+    await validator.validate(json, schema)
   })
 )

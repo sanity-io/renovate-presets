@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "sanity-studio-v3",
+      "commitMessageAction": "Sync V3",
+      "packageNames": ["sanity"],
+      "packagePatterns": ["^@sanity/"],
+      "followTag": "dev-preview",
+      "schedule": ["every weekday"],
+      "rangeStrategy": "pin"
+    }
+  ]
+}
