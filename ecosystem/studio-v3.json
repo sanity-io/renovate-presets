@@ -5,7 +5,7 @@
       "groupName": "sanity-studio-v3",
       "packageNames": ["sanity"],
       "followTag": "dev-preview",
-      "schedule": ["every weekday"]
+      "schedule": ["at any time"]
     },
     {
       "matchPackageNames": ["@types/react"],
@@ -35,13 +35,13 @@
         "sanity-plugin-mux-input"
       ],
       "followTag": "studio-v3",
-      "schedule": ["every weekday"]
+      "schedule": ["at any time"]
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
       "followTag": "v3-studio",
-      "schedule": ["every weekday"]
+      "schedule": ["at any time"]
     }
   ]
 }

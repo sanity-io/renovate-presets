@@ -34,7 +34,7 @@ async function main() {
       groupName: `sanity-${followTag}-plugins`,
       packageNames: [...groups.get(followTag)].sort(),
       followTag,
-      schedule: ['every weekday'],
+      schedule: ['at any time'],
     })
   }
 
