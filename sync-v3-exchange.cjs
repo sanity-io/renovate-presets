@@ -13,7 +13,7 @@ async function main() {
     /* groq */ `*[studioVersion == 3 || defined(v3DistTag)] {packageName, v3DistTag}`
   )
   const v3DistTags = new Set()
-  const groups = new Map()
+  const groups = new Map([['studio-v3', ['@sanity/next-studio-layout']]])
   for (const plugin of plugins.filter((plugin) => Boolean(plugin.v3DistTag))) {
     v3DistTags.add(plugin.v3DistTag)
 
@@ -32,7 +32,7 @@ async function main() {
     }
     Object.assign(preset.packageRules[packageRuleIndex], {
       groupName: `sanity-${followTag}-plugins`,
-      packageNames: groups.get(followTag),
+      packageNames: [...groups.get(followTag)].sort(),
       followTag,
       schedule: ['every weekday'],
     })
