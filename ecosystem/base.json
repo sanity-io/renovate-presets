@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":prHourlyLimitNone", ":semanticCommits", "replacements:all"],
+  "extends": [
+    "config:base",
+    ":prHourlyLimitNone",
+    ":semanticCommits",
+    "replacements:all"
+  ],
   "ignorePresets": [":ignoreModulesAndTests"],
   "ignorePaths": [],
   "dependencyDashboard": true
