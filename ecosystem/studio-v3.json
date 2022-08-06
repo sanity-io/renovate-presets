@@ -9,6 +9,13 @@
       "followTag": "dev-preview",
       "schedule": ["every weekday"],
       "rangeStrategy": "pin"
+    },
+    {
+      "matchPackageNames": ["@types/react"],
+      "matchPackagePrefixes": ["react"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "allowedVersions": "<=17",
+      "enabled": true
     }
   ]
 }
