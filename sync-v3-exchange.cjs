@@ -13,7 +13,7 @@ async function main() {
     /* groq */ `*[studioVersion == 3 || defined(v3DistTag)] {packageName, v3DistTag}`
   )
   const v3DistTags = new Set()
-  const groups = new Map([['studio-v3', ['@sanity/next-studio-layout']]])
+  const groups = new Map()
   for (const plugin of plugins.filter((plugin) => Boolean(plugin.v3DistTag))) {
     v3DistTags.add(plugin.v3DistTag)
 
