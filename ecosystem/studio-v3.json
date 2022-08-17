@@ -41,6 +41,12 @@
       "packageNames": ["sanity-plugin-media"],
       "followTag": "v3-studio",
       "schedule": ["at any time"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@sanity/base", "@sanity/cli", "@sanity/core", "@sanity/default-layout", "@sanity/default-login", "@sanity/desk-tool", "@sanity/types"],
+      "replacementName": "sanity",
+      "replacementVersion": "dev-preview"
     }
   ]
 }
