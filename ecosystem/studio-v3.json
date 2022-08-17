@@ -44,7 +44,15 @@
     },
     {
       "matchDatasources": ["npm"],
-      "matchPackageNames": ["@sanity/base", "@sanity/cli", "@sanity/core", "@sanity/default-layout", "@sanity/default-login", "@sanity/desk-tool", "@sanity/types"],
+      "matchPackageNames": [
+        "@sanity/base",
+        "@sanity/cli",
+        "@sanity/core",
+        "@sanity/default-layout",
+        "@sanity/default-login",
+        "@sanity/desk-tool",
+        "@sanity/types"
+      ],
       "replacementName": "sanity",
       "replacementVersion": "dev-preview"
     }
