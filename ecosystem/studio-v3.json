@@ -1,7 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Stay up to date to Sanity Studio v3, and when it reaches stable release this preset will create PRs for you that migrates your studio as well as all your plugins in a single PR",
   "packageRules": [
     {
+      "description": "Ensures the peerDependencies sanity entry is dev-preview compatible",
       "groupName": "sanity-studio-v3-widen",
       "packageNames": ["sanity"],
       "depTypeList": ["peerDependencies"],
@@ -10,6 +12,7 @@
       "schedule": ["at any time"]
     },
     {
+      "description": "Studio v3 is currently a prerelease and thus it must use exact versions and need to be pinned to avoid other prereleases than dev-preview to be installed accidentally",
       "groupName": "sanity-studio-v3-pin",
       "packageNames": ["sanity"],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
@@ -18,6 +21,7 @@
       "schedule": ["at any time"]
     },
     {
+      "description": "Studio v3 isn't ready for React v18 yet",
       "matchPackagePrefixes": ["react", "@types/react"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=17",
@@ -52,6 +56,7 @@
       "schedule": ["at any time"]
     },
     {
+      "description": "Studio v3 is now a single dependency instead of multiple",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
         "@sanity/base",

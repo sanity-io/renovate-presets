@@ -1,4 +1,5 @@
 {
+  "description": "Configures Renovate Bot to follow best practices as determined by the Ecosystem team at Sanity",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>sanity-io/renovate-presets//ecosystem/base",
@@ -6,6 +7,7 @@
     "github>sanity-io/renovate-presets//ecosystem/schedule",
     "github>sanity-io/renovate-presets//ecosystem/strategy"
   ],
+  "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.\n\n---\n\nThis repository is using a [Renovate preset maintained by the Ecosystem team](https://github.com/sanity-io/renovate-presets/tree/master/ecosystem) at\n\n<a href=\"https://www.sanity.io/?utm_source=GitHub&utm_campaign=ecosystem-renovate-preset\" rel=\"nofollow\" target=\"_blank\">\n\t<img src=\"https://www.sanity.io/static/images/logo_red.svg?v=2\" width=\"300\"><br />\n\tSanity: The Headless CMS Construction Kit\n</a>\n\n---",
   "packageRules": [
     {
       "updateTypes": ["major"],
