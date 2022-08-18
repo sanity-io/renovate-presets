@@ -1,0 +1,23 @@
+name: Prettier
+
+on: push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: lts/*
+      - run: npm ci --no-scripts
+      - run: npx prettier --ignore-path .gitignore --write .
+      - uses: EndBug/add-and-commit@v9
+        with:
+          commit: --no-verify
+          message: 'chore(bot): prettier formatting [skip release]'
