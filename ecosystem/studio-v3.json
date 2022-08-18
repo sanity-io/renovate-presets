@@ -8,9 +8,14 @@
       "schedule": ["at any time"]
     },
     {
-      "matchPackageNames": ["@types/react"],
-      "matchPackagePrefixes": ["react"],
-      "matchDepTypes": ["dependencies", "devDependencies"],
+      "packageNames": ["sanity"],
+      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
+    },
+    {
+      "matchPackagePrefixes": ["react", "@types/react"],
+      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=17",
       "enabled": true
     },
@@ -54,7 +59,8 @@
         "@sanity/types"
       ],
       "replacementName": "sanity",
-      "replacementVersion": "dev-preview"
+      "replacementVersion": "dev-preview",
+      "schedule": ["at any time"]
     }
   ]
 }
