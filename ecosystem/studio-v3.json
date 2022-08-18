@@ -15,7 +15,6 @@
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
       "followTag": "dev-preview",
-      "allowedVersions": "!/3.0.0-v3-v2-pte.56/",
       "schedule": ["at any time"]
     },
     {
