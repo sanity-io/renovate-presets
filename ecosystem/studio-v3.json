@@ -2,12 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "groupName": "sanity-studio-v3",
+      "groupName": "sanity-studio-v3-widen",
       "packageNames": ["sanity"],
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "widen",
       "followTag": "dev-preview",
       "schedule": ["at any time"]
     },
     {
+      "groupName": "sanity-studio-v3-pin",
       "packageNames": ["sanity"],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
