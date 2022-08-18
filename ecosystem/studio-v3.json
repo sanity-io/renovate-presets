@@ -47,13 +47,15 @@
         "sanity-plugin-mux-input"
       ],
       "followTag": "studio-v3",
-      "schedule": ["at any time"]
+      "schedule": ["at any time"],
+      "rangeStrategy": "pin"
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
       "followTag": "v3-studio",
-      "schedule": ["at any time"]
+      "schedule": ["at any time"],
+      "rangeStrategy": "pin"
     },
     {
       "description": "Studio v3 is now a single dependency instead of multiple",
