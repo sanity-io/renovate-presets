@@ -16,6 +16,9 @@ jobs:
           cache: npm
           node-version: lts/*
       - run: npm ci --no-scripts
+      - run: npx prettier --ignore-path .gitignore --check ".github/workflows/**/*.yml"
+      - if: ${{ failure() }}
+        run: echo "An action can't make changes to actions, you'll have to run prettier manually"
       - run: npx prettier --ignore-path .gitignore --write .
       - uses: EndBug/add-and-commit@v9
         with:
