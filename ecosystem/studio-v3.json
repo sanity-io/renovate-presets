@@ -14,6 +14,7 @@
       "schedule": ["at any time"]
     },
     {
+      "followTag": "dev-preview",
       "matchPackagePrefixes": ["react", "@types/react"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=17",
