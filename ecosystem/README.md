@@ -9,7 +9,7 @@ Default setup:
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-presets//ecosystem/auto"]
+     "extends": ["github>sanity-io/renovate-presets//ecosystem/auto"]
 }
 ```
 
