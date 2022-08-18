@@ -46,16 +46,12 @@
         "sanity-plugin-markdown",
         "sanity-plugin-mux-input"
       ],
-      "followTag": "studio-v3",
-      "schedule": ["at any time"],
-      "rangeStrategy": "pin"
+      "followTag": "studio-v3"
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
-      "followTag": "v3-studio",
-      "schedule": ["at any time"],
-      "rangeStrategy": "pin"
+      "followTag": "v3-studio"
     },
     {
       "description": "Studio v3 is now a single dependency instead of multiple",
