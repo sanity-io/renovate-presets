@@ -63,19 +63,22 @@
         "sanity-plugin-mux-input"
       ],
       "followTag": "studio-v3",
-      "rangeStrategy": "pin"
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
       "followTag": "v3-studio",
-      "rangeStrategy": "pin"
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
     },
     {
       "groupName": "sanity-dev-preview-plugins",
       "packageNames": ["@sanity/vision"],
       "followTag": "dev-preview",
-      "rangeStrategy": "pin"
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
     }
   ]
 }
