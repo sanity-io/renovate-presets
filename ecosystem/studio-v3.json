@@ -50,6 +50,7 @@
         "@sanity/color-input",
         "@sanity/document-internationalization",
         "@sanity/google-maps-input",
+        "@sanity/orderable-document-list",
         "@sanity/scheduled-publishing",
         "sanity-plugin-asset-source-unsplash",
         "sanity-plugin-content-calendar",
