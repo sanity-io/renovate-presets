@@ -4,10 +4,10 @@
   "packageRules": [
     {
       "description": "Ensures the peerDependencies sanity entry is dev-preview compatible",
-      "groupName": "sanity-studio-v3-widen",
-      "packageNames": ["sanity"],
+      "groupName": "sanity-dev-preview-plugins",
+      "packageNames": ["@sanity/vision"],
       "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "widen",
+      "rangeStrategy": "pin",
       "followTag": "dev-preview",
       "schedule": ["at any time"]
     },
@@ -46,12 +46,16 @@
         "sanity-plugin-markdown",
         "sanity-plugin-mux-input"
       ],
-      "followTag": "studio-v3"
+      "followTag": "studio-v3",
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
-      "followTag": "v3-studio"
+      "followTag": "v3-studio",
+      "rangeStrategy": "pin",
+      "schedule": ["at any time"]
     },
     {
       "description": "Studio v3 is now a single dependency instead of multiple",
