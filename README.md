@@ -10,7 +10,7 @@ Usage:
 
 ```json
 {
-  "extends": ["github>sanity-io/renovate-presets:sanity-template"]
+       "extends":     ["github>sanity-io/renovate-presets:sanity-template"]
 }
 ```
 

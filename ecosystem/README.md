@@ -19,7 +19,7 @@ Opt-in to Studio v3:
 
 ```json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+       "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>sanity-io/renovate-presets//ecosystem/auto",
     "github>sanity-io/renovate-presets//ecosystem/studio-v3"
