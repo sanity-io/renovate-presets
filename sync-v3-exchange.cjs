@@ -25,7 +25,9 @@ async function main() {
   const preset = require('./ecosystem/studio-v3.json')
   for (const followTag of [...v3DistTags]) {
     let packageRuleIndex = preset.packageRules.findIndex(
-      (rule) => rule.followTag === followTag && rule.groupName === `sanity-${rule.followTag}-plugins`
+      (rule) =>
+        rule.followTag === followTag &&
+        rule.groupName === `sanity-${rule.followTag}-plugins`
     )
     if (packageRuleIndex === -1) {
       packageRuleIndex = preset.packageRules.push({}) - 1
