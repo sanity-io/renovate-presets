@@ -28,6 +28,22 @@
       "enabled": true
     },
     {
+      "description": "Studio v3 is now a single dependency instead of multiple",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": [
+        "@sanity/base",
+        "@sanity/cli",
+        "@sanity/core",
+        "@sanity/default-layout",
+        "@sanity/default-login",
+        "@sanity/desk-tool",
+        "@sanity/types"
+      ],
+      "replacementName": "sanity",
+      "replacementVersion": "dev-preview",
+      "schedule": ["at any time"]
+    },
+    {
       "groupName": "sanity-studio-v3-plugins",
       "packageNames": [
         "@sanity/code-input",
@@ -47,38 +63,19 @@
         "sanity-plugin-mux-input"
       ],
       "followTag": "studio-v3",
-      "rangeStrategy": "pin",
-      "schedule": ["at any time"]
+      "rangeStrategy": "pin"
     },
     {
       "groupName": "sanity-v3-studio-plugins",
       "packageNames": ["sanity-plugin-media"],
       "followTag": "v3-studio",
-      "rangeStrategy": "pin",
-      "schedule": ["at any time"]
-    },
-    {
-      "description": "Studio v3 is now a single dependency instead of multiple",
-      "matchDatasources": ["npm"],
-      "matchPackageNames": [
-        "@sanity/base",
-        "@sanity/cli",
-        "@sanity/core",
-        "@sanity/default-layout",
-        "@sanity/default-login",
-        "@sanity/desk-tool",
-        "@sanity/types"
-      ],
-      "replacementName": "sanity",
-      "replacementVersion": "dev-preview",
-      "schedule": ["at any time"]
+      "rangeStrategy": "pin"
     },
     {
       "groupName": "sanity-dev-preview-plugins",
       "packageNames": ["@sanity/vision"],
       "followTag": "dev-preview",
-      "rangeStrategy": "pin",
-      "schedule": ["at any time"]
+      "rangeStrategy": "pin"
     }
   ]
 }
