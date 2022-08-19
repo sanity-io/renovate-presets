@@ -1,11 +1,11 @@
 import fs from 'fast-glob'
 import validator from 'json-schema-remote'
 import { readFile } from 'fs/promises'
-import { get        } from 'https'
+import { get } from 'https'
 
 const [schema, files] = await Promise.all([
   (async () =>
-       JSON.parse(
+    JSON.parse(
       await new Promise((resolve, reject) => {
         get('https://docs.renovatebot.com/renovate-schema.json', (res) => {
           let data = ''
