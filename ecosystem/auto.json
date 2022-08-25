@@ -5,7 +5,8 @@
     "github>sanity-io/renovate-presets//ecosystem/base",
     "github>sanity-io/renovate-presets//ecosystem/labels",
     "github>sanity-io/renovate-presets//ecosystem/schedule",
-    "github>sanity-io/renovate-presets//ecosystem/strategy"
+    "github>sanity-io/renovate-presets//ecosystem/strategy",
+    "github>sanity-io/renovate-presets//ecosystem/node-fetch-cjs"
   ],
   "packageRules": [
     {
