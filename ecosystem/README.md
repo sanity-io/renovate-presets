@@ -48,6 +48,7 @@ If you like most of the presets but disagree with one or two, use `ignorePresets
 
 For example, you're happy with `github>sanity-io/renovate-presets//ecosystem/auto` except you don't want it to give [PRs labels automatically](https://user-images.githubusercontent.com/81981/187027000-de482541-e28a-481a-83f3-166e31175c38.png)?
 `renovate.json`:
+
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
@@ -58,6 +59,7 @@ For example, you're happy with `github>sanity-io/renovate-presets//ecosystem/aut
 
 It doesn't matter how many levels it's nested, `ignorePresets` is like `!important` in CSS.
 `renovate.json`:
+
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
@@ -65,7 +67,8 @@ It doesn't matter how many levels it's nested, `ignorePresets` is like `!importa
   "ignorePresets": [":ignoreModulesAndTests"]
 }
 ```
-works just as well as 
+
+works just as well as
 
 ```json
 {
