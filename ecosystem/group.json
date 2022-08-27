@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "group:linters", "group:postcss", 
+    "group:linters",
+    "group:postcss",
     "group:codemirror",
     "group:commitlintMonorepo",
     "group:polymer",
@@ -13,7 +14,6 @@
     "group:remixMonorepo",
     "group:semantic-releaseMonorepo",
     "group:webdriverioMonorepo"
-  
   ],
   "packageRules": [
     {
