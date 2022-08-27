@@ -1,6 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["group:linters", "group:postcss"],
+  "extends": [
+    "group:linters", "group:postcss", 
+    "group:codemirror",
+    "group:commitlintMonorepo",
+    "group:polymer",
+    "group:denoMonorepo",
+    "group:dnd-kitMonorepo",
+    "group:docusaurusMonorepo",
+    "group:formatjsMonorepo",
+    "group:gatsbyMonorepo",
+    "group:remixMonorepo",
+    "group:semantic-releaseMonorepo",
+    "group:webdriverioMonorepo"
+  
+  ],
   "packageRules": [
     {
       "groupName": "three packages",
@@ -8,6 +22,7 @@
       "packagePatterns": ["^@react-three/"]
     },
     {
+      "extends": ["group:sanityMonorepo"],
       "groupName": "sanity packages",
       "packageNames": ["sanity", "next-sanity"],
       "packagePatterns": ["^@sanity/", "^@portable-text/", "sanity-plugin-*"]
