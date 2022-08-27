@@ -2,7 +2,7 @@
   "description": "Configures Renovate Bot to follow best practices as determined by the Ecosystem team at Sanity",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "workarounds:all¶",
+    "workarounds:all",
     "github>sanity-io/renovate-presets//ecosystem/base",
     "github>sanity-io/renovate-presets//ecosystem/labels",
     "github>sanity-io/renovate-presets//ecosystem/schedule",
