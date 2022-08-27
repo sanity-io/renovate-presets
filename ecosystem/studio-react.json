@@ -1,12 +1,12 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "packageRules": [
-        {
-            "description": "Sanity studio isn't ready for React v18 yet",
-            "matchPackagePrefixes": ["react", "@types/react"],
-            "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-            "allowedVersions": "<=17",
-            "enabled": true
-          }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Sanity studio isn't ready for React v18 yet",
+      "matchPackagePrefixes": ["react", "@types/react"],
+      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
+      "allowedVersions": "<=17",
+      "enabled": true
+    }
+  ]
 }

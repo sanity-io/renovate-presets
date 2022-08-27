@@ -1,6 +1,5 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "description": "Stay up to date to Sanity Studio v2, and update plugins in a single PR",
-    "extends": ["github>sanity-io/renovate-presets//ecosystem/studio-react"]
-  }
-  
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Stay up to date to Sanity Studio v2, and update plugins in a single PR",
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/studio-react"]
+}
