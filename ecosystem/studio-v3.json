@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Stay up to date to Sanity Studio v3, and when it reaches stable release this preset will create PRs for you that migrates your studio as well as all your plugins in a single PR",
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/studio-react"],
   "packageRules": [
     {
       "description": "Ensures the peerDependencies sanity entry is dev-preview compatible",
@@ -19,13 +20,6 @@
       "rangeStrategy": "pin",
       "followTag": "dev-preview",
       "schedule": ["at any time"]
-    },
-    {
-      "description": "Studio v3 isn't ready for React v18 yet",
-      "matchPackagePrefixes": ["react", "@types/react"],
-      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "allowedVersions": "<=17",
-      "enabled": true
     },
     {
       "description": "Studio v3 is now a single dependency instead of multiple",
