@@ -56,6 +56,8 @@
         "sanity-plugin-content-calendar",
         "sanity-plugin-dashboard-widget-cats",
         "sanity-plugin-dashboard-widget-document-list",
+        "sanity-plugin-dashboard-widget-netlify",
+        "sanity-plugin-dashboard-widget-vercel",
         "sanity-plugin-graph-view",
         "sanity-plugin-iframe-pane",
         "sanity-plugin-internationalized-array",
