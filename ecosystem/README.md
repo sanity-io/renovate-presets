@@ -78,10 +78,6 @@ works just as well as
 }
 ```
 
-## Troubleshoot
-
-You may need to [add the repo to the Renovatebot allowlist](https://github.com/organizations/sanity-io/settings/installations/2371209#:~:text=requests%2C%20and%20workflows-,Repository%20access,-All%20repositories), as we don't enable it by default on all repos.
-
 ## Removing branding
 
 Using our preset adds [some branding](https://user-images.githubusercontent.com/81981/187096428-e17c3bfb-9721-4421-859b-a0e85300c230.png) to the dashboard issue. You [can turn it off](https://user-images.githubusercontent.com/81981/187096465-53ed0cc1-4d00-4968-8f51-ec696ed9a48c.png):
@@ -92,3 +88,7 @@ Using our preset adds [some branding](https://user-images.githubusercontent.com/
   "ignorePresets": ["github>sanity-io/renovate-presets//ecosystem/branding"]
 }
 ```
+
+## Troubleshoot
+
+You may need to [add the repo to the Renovatebot allowlist](https://github.com/organizations/sanity-io/settings/installations/2371209#:~:text=requests%2C%20and%20workflows-,Repository%20access,-All%20repositories), as we don't enable it by default on all repos.
