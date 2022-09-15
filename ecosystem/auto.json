@@ -8,7 +8,8 @@
     "github>sanity-io/renovate-presets//ecosystem/schedule",
     "github>sanity-io/renovate-presets//ecosystem/security",
     "github>sanity-io/renovate-presets//ecosystem/strategy",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-node-fetch"
+    "github>sanity-io/renovate-presets//ecosystem/workaround-node-fetch",
+    "github>sanity-io/renovate-presets//ecosystem/workaround-is-retry-allowed"
   ],
   "packageRules": [
     {
