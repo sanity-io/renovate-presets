@@ -1,0 +1,9 @@
+{
+  "description": "decompress-response v7 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["decompress-response"],
+      "allowedVersions": "<=7"
+    }
+  ]
+}
