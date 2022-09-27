@@ -8,6 +8,13 @@
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=17",
       "enabled": true
+    },
+    {
+      "description": "@sanity/ui@0.38 and newer requires a higher react version than 16, making it a breaking change",
+      "packageNames": ["@sanity/ui"],
+      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
+      "allowedVersions": "<=0.37",
+      "enabled": true
     }
   ]
 }
