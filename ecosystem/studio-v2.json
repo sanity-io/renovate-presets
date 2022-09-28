@@ -14,7 +14,6 @@
       "packageNames": ["@sanity/ui"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=0.37",
-      "rangeStrategy": "pin",
       "enabled": true
     },
     {
