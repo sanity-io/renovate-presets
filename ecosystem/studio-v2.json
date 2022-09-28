@@ -22,7 +22,7 @@
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=1.3.5",
       "rangeStrategy": "pin",
-      "enabled": true
+      "enabled": false
     }
   ]
 }
