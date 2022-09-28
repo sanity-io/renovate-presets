@@ -14,6 +14,7 @@
       "packageNames": ["@sanity/ui"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=0.37",
+      "rangeStrategy": "pin",
       "enabled": true
     },
     {
@@ -21,6 +22,7 @@
       "packageNames": ["@sanity/icons"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=1.3.5",
+      "rangeStrategy": "pin",
       "enabled": true
     }
   ]
