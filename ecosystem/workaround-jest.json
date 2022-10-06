@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "extends": ["monorepo:jest"],
-      "packageNames": ["@types/jest"],
+      "packageNames": ["@types/jest", "ts-jest"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "allowedVersions": "<=27"
     }
