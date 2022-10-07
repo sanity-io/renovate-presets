@@ -63,6 +63,7 @@
         "sanity-plugin-dashboard-widget-document-list",
         "sanity-plugin-dashboard-widget-netlify",
         "sanity-plugin-dashboard-widget-vercel",
+        "sanity-plugin-documents-pane",
         "sanity-plugin-graph-view",
         "sanity-plugin-iframe-pane",
         "sanity-plugin-internationalized-array",
