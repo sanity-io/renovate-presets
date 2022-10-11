@@ -33,6 +33,15 @@
       "schedule": ["at any time"]
     },
     {
+      "description": "@sanity/ui is react 18 ready on the next branch",
+      "groupName": "sanity-ui-pin",
+      "packageNames": ["@sanity/ui"],
+      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
+      "rangeStrategy": "pin",
+      "followTag": "next",
+      "schedule": ["at any time"]
+    },
+    {
       "description": "Studio v3 is now a single dependency instead of multiple",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
