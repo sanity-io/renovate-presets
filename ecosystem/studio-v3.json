@@ -11,7 +11,7 @@
       "description": "Sanity studio is adding React v18 support, this rule will be removed after a new dev-preview is published that includes it",
       "matchPackagePrefixes": ["react", "@types/react"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "allowedVersions": "<=17",
+      "allowedVersions": "<=18",
       "enabled": true
     },
     {
@@ -38,7 +38,7 @@
       "packageNames": ["@sanity/ui"],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
-      "followTag": "next",
+      "followTag": "beta",
       "schedule": ["at any time"]
     },
     {
