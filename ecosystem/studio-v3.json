@@ -35,7 +35,12 @@
     {
       "description": "@sanity/ui is react 18 ready on the next branch",
       "groupName": "sanity-ui-pin",
-      "packageNames": ["@sanity/ui", "@sanity/color", "@sanity/icons", "@sanity/logos"],
+      "packageNames": [
+        "@sanity/ui",
+        "@sanity/color",
+        "@sanity/icons",
+        "@sanity/logos"
+      ],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
       "followTag": "beta",
