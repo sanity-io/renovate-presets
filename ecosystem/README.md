@@ -88,3 +88,7 @@ Using our preset adds [some branding](https://user-images.githubusercontent.com/
   "ignorePresets": ["github>sanity-io/renovate-presets//ecosystem/branding"]
 }
 ```
+
+## Troubleshoot
+
+You may need to [add the repo to the Renovatebot allowlist](https://github.com/organizations/sanity-io/settings/installations/2371209#:~:text=requests%2C%20and%20workflows-,Repository%20access,-All%20repositories), as we don't enable it by default on all repos.
