@@ -1,0 +1,9 @@
+{
+  "description": "inquirer v8 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["inquirer"],
+      "allowedVersions": "<=8"
+    }
+  ]
+}

@@ -8,6 +8,7 @@
     "github>sanity-io/renovate-presets//ecosystem/workaround-execa",
     "github>sanity-io/renovate-presets//ecosystem/workaround-git-remote-origin-url",
     "github>sanity-io/renovate-presets//ecosystem/workaround-globby",
+    "github>sanity-io/renovate-presets//ecosystem/workaround-inquirer",
     "github>sanity-io/renovate-presets//ecosystem/workaround-into-stream",
     "github>sanity-io/renovate-presets//ecosystem/workaround-is-retry-allowed",
     "github>sanity-io/renovate-presets//ecosystem/workaround-is-stream",
