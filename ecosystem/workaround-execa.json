@@ -1,0 +1,9 @@
+{
+  "description": "execa v5 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["execa"],
+      "allowedVersions": "<=5"
+    }
+  ]
+}
