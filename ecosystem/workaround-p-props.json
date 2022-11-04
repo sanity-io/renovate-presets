@@ -1,0 +1,9 @@
+{
+  "description": "p-props v4 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["p-props"],
+      "allowedVersions": "<=4"
+    }
+  ]
+}

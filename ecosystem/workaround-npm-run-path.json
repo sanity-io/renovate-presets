@@ -1,0 +1,9 @@
+{
+  "description": "npm-run-path v4 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["npm-run-path"],
+      "allowedVersions": "<=4"
+    }
+  ]
+}

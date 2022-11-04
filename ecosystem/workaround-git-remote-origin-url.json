@@ -1,0 +1,9 @@
+{
+  "description": "git-remote-origin-url v3 is the last release that supports CJS",
+  "packageRules": [
+    {
+      "packageNames": ["git-remote-origin-url"],
+      "allowedVersions": "<=3"
+    }
+  ]
+}
