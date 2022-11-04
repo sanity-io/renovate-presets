@@ -21,7 +21,7 @@
     {
       "description": "Studio v3 is currently a prerelease and thus it must use exact versions and need to be pinned to avoid other prereleases than dev-preview to be installed accidentally",
       "groupName": "sanity-studio-v3-pin",
-      "packageNames": ["sanity"],
+      "packageNames": ["sanity", "@sanity/block-tools", "@sanity/cli", "@sanity/diff", "@sanity/export", "@sanity/import", "@sanity/schema", "@sanity/portable-text-editor", "@sanity/mutator", "@sanity/server", "@sanity/types", "@sanity/util", "@sanity/validation"],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
       "followTag": "dev-preview",
@@ -31,6 +31,7 @@
       "description": "@sanity/ui is react 18 ready on the next branch",
       "groupName": "sanity-ui-pin",
       "packageNames": [
+        "@sanity/ui-workshop",
         "@sanity/ui",
         "@sanity/color",
         "@sanity/icons",
