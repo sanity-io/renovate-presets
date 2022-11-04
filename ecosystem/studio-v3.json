@@ -3,11 +3,6 @@
   "description": "Stay up to date to Sanity Studio v3, and when it reaches stable release this preset will create PRs for you that migrates your studio as well as all your plugins in a single PR",
   "packageRules": [
     {
-      "description": "Most of the dev-preview plugins uses parcel and typescript, and parcel currently have an issue if using 4.8, this rule will prevent making PRs for 4.8 until this problem is resolved",
-      "packageNames": ["typescript"],
-      "allowedVersions": "<=4.7"
-    },
-    {
       "description": "Sanity studio is adding React v18 support, this rule will be removed after a new dev-preview is published that includes it",
       "matchPackagePrefixes": ["react", "@types/react"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
