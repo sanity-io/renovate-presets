@@ -1,7 +1,6 @@
 {
   "type": "module",
   "scripts": {
-    "sync:studio-v3": "node sync-v3-exchange.cjs && npx prettier --write ecosystem/studio-v3.json",
     "test": "node validate"
   },
   "prettier": {
