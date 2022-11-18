@@ -71,7 +71,7 @@
       "replacementName": "sanity",
       "replacementVersion": "dev-preview",
       "schedule": ["at any time"]
-    }
+    },
     {
       "groupName": "sanity-dev-preview-plugins",
       "packageNames": ["@sanity/vision"],
