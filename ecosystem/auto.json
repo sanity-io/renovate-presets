@@ -9,6 +9,7 @@
     "github>sanity-io/renovate-presets//ecosystem/security",
     "github>sanity-io/renovate-presets//ecosystem/strategy",
     "github>sanity-io/renovate-presets//ecosystem/workaround-esm",
+        "github>sanity-io/renovate-presets//ecosystem/workaround-typescript",
     "github>sanity-io/renovate-presets//ecosystem/group-update-types"
   ]
 }
