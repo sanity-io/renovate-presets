@@ -65,8 +65,7 @@
         "@sanity/core",
         "@sanity/default-layout",
         "@sanity/default-login",
-        "@sanity/desk-tool",
-        "@sanity/types"
+        "@sanity/desk-tool"
       ],
       "replacementName": "sanity",
       "replacementVersion": "dev-preview",
