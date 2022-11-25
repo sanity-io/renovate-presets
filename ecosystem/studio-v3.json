@@ -42,14 +42,8 @@
       "schedule": ["at any time"]
     },
     {
-      "description": "@sanity/ui is react 18 ready on the next branch",
-      "groupName": "sanity-ui-pin",
       "packageNames": [
-        "@sanity/ui-workshop",
-        "@sanity/ui",
-        "@sanity/color",
-        "@sanity/icons",
-        "@sanity/logos"
+        "@sanity/ui-workshop"
       ],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
