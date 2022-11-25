@@ -42,9 +42,7 @@
       "schedule": ["at any time"]
     },
     {
-      "packageNames": [
-        "@sanity/ui-workshop"
-      ],
+      "packageNames": ["@sanity/ui-workshop"],
       "depTypeList": ["dependencies", "devDependencies", "resolutions"],
       "rangeStrategy": "pin",
       "followTag": "beta",
