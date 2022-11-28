@@ -10,42 +10,11 @@
       "enabled": true
     },
     {
-      "description": "Ensures the peerDependencies sanity entry is dev-preview compatible",
+      "description": "Ensures the peerDependencies sanity entry is v3 compatible",
       "groupName": "sanity-studio-v3-widen",
       "packageNames": ["sanity"],
       "depTypeList": ["peerDependencies"],
       "rangeStrategy": "widen",
-      "followTag": "dev-preview",
-      "schedule": ["at any time"]
-    },
-    {
-      "description": "Studio v3 is currently a prerelease and thus it must use exact versions and need to be pinned to avoid other prereleases than dev-preview to be installed accidentally",
-      "groupName": "sanity-studio-v3-pin",
-      "packageNames": [
-        "sanity",
-        "@sanity/block-tools",
-        "@sanity/cli",
-        "@sanity/diff",
-        "@sanity/export",
-        "@sanity/import",
-        "@sanity/schema",
-        "@sanity/portable-text-editor",
-        "@sanity/mutator",
-        "@sanity/server",
-        "@sanity/types",
-        "@sanity/util",
-        "@sanity/validation"
-      ],
-      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
-      "rangeStrategy": "pin",
-      "followTag": "dev-preview",
-      "schedule": ["at any time"]
-    },
-    {
-      "packageNames": ["@sanity/ui-workshop"],
-      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
-      "rangeStrategy": "pin",
-      "followTag": "beta",
       "schedule": ["at any time"]
     },
     {
@@ -60,45 +29,8 @@
         "@sanity/desk-tool"
       ],
       "replacementName": "sanity",
-      "replacementVersion": "dev-preview",
+      "replacementVersion": "^3.0.0",
       "schedule": ["at any time"]
-    },
-    {
-      "groupName": "sanity-dev-preview-plugins",
-      "packageNames": ["@sanity/vision"],
-      "followTag": "dev-preview",
-      "rangeStrategy": "pin",
-      "schedule": ["at any time"]
-    },
-    {
-      "groupName": "sanity-studio-v3-plugins",
-      "packageNames": [
-        "@sanity/code-input",
-        "@sanity/color-input",
-        "@sanity/document-internationalization",
-        "@sanity/google-maps-input",
-        "@sanity/orderable-document-list",
-        "@sanity/scheduled-publishing",
-        "sanity-plugin-asset-source-unsplash",
-        "sanity-plugin-content-calendar",
-        "sanity-plugin-dashboard-widget-cats",
-        "sanity-plugin-dashboard-widget-document-list",
-        "sanity-plugin-dashboard-widget-netlify",
-        "sanity-plugin-dashboard-widget-vercel",
-        "sanity-plugin-documents-pane",
-        "sanity-plugin-graph-view",
-        "sanity-plugin-iframe-pane",
-        "sanity-plugin-internationalized-array",
-        "sanity-plugin-latex-input",
-        "sanity-plugin-markdown",
-        "sanity-plugin-mux-input"
-      ],
-      "followTag": "latest"
-    },
-    {
-      "groupName": "sanity-v3-studio-plugins",
-      "packageNames": ["sanity-plugin-media"],
-      "followTag": "latest"
     }
   ]
 }
