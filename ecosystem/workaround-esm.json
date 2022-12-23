@@ -18,6 +18,7 @@
     "github>sanity-io/renovate-presets//ecosystem/workaround-npm-run-path",
     "github>sanity-io/renovate-presets//ecosystem/workaround-p-any",
     "github>sanity-io/renovate-presets//ecosystem/workaround-p-props",
+    "github>sanity-io/renovate-presets//ecosystem/workaround-pretty-bytes",
     "github>sanity-io/renovate-presets//ecosystem/workaround-xdg-basedir"
   ]
 }
