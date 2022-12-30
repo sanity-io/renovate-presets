@@ -1,9 +1,0 @@
-{
-  "description": "is-retry-allowed v2 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["is-retry-allowed"],
-      "allowedVersions": "<=2"
-    }
-  ]
-}
