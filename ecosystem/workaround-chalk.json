@@ -1,9 +1,0 @@
-{
-  "description": "chalk v4 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["chalk"],
-      "allowedVersions": "<=4"
-    }
-  ]
-}
