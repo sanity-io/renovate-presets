@@ -1,9 +1,0 @@
-{
-  "description": "pretty-bytes v5 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["pretty-bytes"],
-      "allowedVersions": "<=5"
-    }
-  ]
-}
