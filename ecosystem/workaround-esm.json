@@ -1,34 +1,54 @@
 {
   "description": "Workaround packages that have moved to become ESM-only",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>sanity-io/renovate-presets//ecosystem/workaround-chalk",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-decompress-response",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-execa",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-git-remote-origin-url",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-globby",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-inquirer",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-into-stream",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-is-retry-allowed",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-is-stream",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-jest",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-meow",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-node-fetch",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-npm-run-path",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-p-any",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-p-props",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-pkg-up",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-pretty-bytes",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-xdg-basedir"
-  ],
   "packageRules": [
+      {
+      "packageNames": ["is-retry-allowed", "is-stream"],
+      "allowedVersions": "<=2"
+    },
     {
-      "packageNames": ["boxen"],
+      "packageNames": ["git-remote-origin-url", "p-any", "pkg-up"],
+      "allowedVersions": "<=3"
+    },
+    {
+      "packageNames": ["chalk", "npm-run-path", "p-props","xdg-basedir"],
+      "allowedVersions": "<=4"
+    },
+    {
+      "packageNames": ["boxen", "execa", "pretty-bytes"],
       "allowedVersions": "<=5"
     },
     {
-      "packageNames": ["camelcase"],
+      "packageNames": ["camelcase", "into-stream"],
       "allowedVersions": "<=6"
+    },
+     {
+      "packageNames": ["decompress-response"],
+      "allowedVersions": "<=7"
+    },
+    {
+      "packageNames": ["inquirer"],
+      "allowedVersions": "<=8"
+    },
+    {
+      "packageNames": ["meow"],
+      "allowedVersions": "<=9"
+    },
+    {
+      "packageNames": ["globby"],
+      "allowedVersions": "<=11"
+    },
+     {
+        "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
+      "packageNames": ["node-fetch"],
+      "followTag": "cjs"
+    },
+    {
+      "description": "jest v28 and later introduces a very problematic behavior with ESM that doesn't interop out of the box with Node16's ESM support",
+      "extends": ["monorepo:jest"],
+      "packageNames": ["@types/jest", "ts-jest"],
+      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
+      "allowedVersions": "<=27"
     }
   ]
 }
