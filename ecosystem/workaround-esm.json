@@ -21,7 +21,7 @@
     "github>sanity-io/renovate-presets//ecosystem/workaround-pretty-bytes",
     "github>sanity-io/renovate-presets//ecosystem/workaround-xdg-basedir"
   ],
-    "packageRules": [
+  "packageRules": [
     {
       "packageNames": ["camelcase"],
       "allowedVersions": "<=6"
