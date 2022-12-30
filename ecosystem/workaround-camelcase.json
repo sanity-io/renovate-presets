@@ -1,9 +1,0 @@
-{
-  "description": "camelcase v6 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["camelcase"],
-      "allowedVersions": "<=6"
-    }
-  ]
-}
