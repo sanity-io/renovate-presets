@@ -23,6 +23,10 @@
   ],
   "packageRules": [
     {
+      "packageNames": ["boxen"],
+      "allowedVersions": "<=5"
+    },
+    {
       "packageNames": ["camelcase"],
       "allowedVersions": "<=6"
     }
