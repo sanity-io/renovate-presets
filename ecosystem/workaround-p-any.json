@@ -1,9 +1,0 @@
-{
-  "description": "p-any v3 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["p-any"],
-      "allowedVersions": "<=3"
-    }
-  ]
-}
