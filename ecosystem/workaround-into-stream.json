@@ -1,9 +1,0 @@
-{
-  "description": "into-stream v6 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["into-stream"],
-      "allowedVersions": "<=6"
-    }
-  ]
-}
