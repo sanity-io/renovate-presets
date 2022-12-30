@@ -2,7 +2,7 @@
   "description": "Workaround packages that have moved to become ESM-only",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
-      {
+    {
       "packageNames": ["is-retry-allowed", "is-stream"],
       "allowedVersions": "<=2"
     },
@@ -11,7 +11,7 @@
       "allowedVersions": "<=3"
     },
     {
-      "packageNames": ["chalk", "npm-run-path", "p-props","xdg-basedir"],
+      "packageNames": ["chalk", "npm-run-path", "p-props", "xdg-basedir"],
       "allowedVersions": "<=4"
     },
     {
@@ -22,7 +22,7 @@
       "packageNames": ["camelcase", "into-stream"],
       "allowedVersions": "<=6"
     },
-     {
+    {
       "packageNames": ["decompress-response"],
       "allowedVersions": "<=7"
     },
@@ -38,8 +38,8 @@
       "packageNames": ["globby"],
       "allowedVersions": "<=11"
     },
-     {
-        "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
+    {
+      "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
       "packageNames": ["node-fetch"],
       "followTag": "cjs"
     },
