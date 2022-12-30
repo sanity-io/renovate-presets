@@ -1,9 +1,0 @@
-{
-  "description": "boxen v5 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["boxen"],
-      "allowedVersions": "<=5"
-    }
-  ]
-}
