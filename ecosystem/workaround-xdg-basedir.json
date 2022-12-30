@@ -1,9 +1,0 @@
-{
-  "description": "xdg-basedir v4 is the last release that supports CJS",
-  "packageRules": [
-    {
-      "packageNames": ["xdg-basedir"],
-      "allowedVersions": "<=4"
-    }
-  ]
-}
