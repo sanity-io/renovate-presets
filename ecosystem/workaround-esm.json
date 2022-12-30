@@ -2,7 +2,6 @@
   "description": "Workaround packages that have moved to become ESM-only",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>sanity-io/renovate-presets//ecosystem/workaround-camelcase",
     "github>sanity-io/renovate-presets//ecosystem/workaround-chalk",
     "github>sanity-io/renovate-presets//ecosystem/workaround-decompress-response",
     "github>sanity-io/renovate-presets//ecosystem/workaround-execa",
@@ -21,5 +20,11 @@
     "github>sanity-io/renovate-presets//ecosystem/workaround-pkg-up",
     "github>sanity-io/renovate-presets//ecosystem/workaround-pretty-bytes",
     "github>sanity-io/renovate-presets//ecosystem/workaround-xdg-basedir"
+  ],
+    "packageRules": [
+    {
+      "packageNames": ["camelcase"],
+      "allowedVersions": "<=6"
+    }
   ]
 }
