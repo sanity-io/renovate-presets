@@ -3,15 +3,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packageNames": ["is-retry-allowed", "is-stream"],
+      "packageNames": ["is-retry-allowed", "is-stream", "p-filter"],
       "allowedVersions": "<=2"
     },
     {
-      "packageNames": ["git-remote-origin-url", "p-any", "pkg-up"],
+      "packageNames": ["clean-stack", "git-remote-origin-url", "p-any", "pkg-up"],
       "allowedVersions": "<=3"
     },
     {
-      "packageNames": ["chalk", "npm-run-path", "p-props", "xdg-basedir"],
+      "packageNames": ["chalk", "npm-run-path", "p-props", "p-timeout", "xdg-basedir"],
       "allowedVersions": "<=4"
     },
     {
@@ -19,7 +19,7 @@
       "allowedVersions": "<=5"
     },
     {
-      "packageNames": ["camelcase", "into-stream"],
+      "packageNames": ["camelcase", "del", "into-stream"],
       "allowedVersions": "<=6"
     },
     {
