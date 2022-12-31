@@ -7,11 +7,22 @@
       "allowedVersions": "<=2"
     },
     {
-      "packageNames": ["clean-stack", "git-remote-origin-url", "p-any", "pkg-up"],
+      "packageNames": [
+        "clean-stack",
+        "git-remote-origin-url",
+        "p-any",
+        "pkg-up"
+      ],
       "allowedVersions": "<=3"
     },
     {
-      "packageNames": ["chalk", "npm-run-path", "p-props", "p-timeout", "xdg-basedir"],
+      "packageNames": [
+        "chalk",
+        "npm-run-path",
+        "p-props",
+        "p-timeout",
+        "xdg-basedir"
+      ],
       "allowedVersions": "<=4"
     },
     {
