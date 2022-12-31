@@ -3,13 +3,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packageNames": ["is-retry-allowed", "is-stream", "p-filter"],
+      "packageNames": ["arrify", "is-retry-allowed", "is-stream", "p-filter"],
       "allowedVersions": "<=2"
     },
     {
       "packageNames": [
         "clean-stack",
+        "file-url",
         "git-remote-origin-url",
+        "leven",
         "p-any",
         "pkg-up"
       ],
@@ -18,7 +20,9 @@
     {
       "packageNames": [
         "chalk",
+        "log-symbols",
         "npm-run-path",
+        "p-map",
         "p-props",
         "p-timeout",
         "xdg-basedir"
@@ -26,15 +30,15 @@
       "allowedVersions": "<=4"
     },
     {
-      "packageNames": ["boxen", "execa", "pretty-bytes"],
+      "packageNames": ["boxen", "execa", "ora", "pretty-bytes", "pkg-dir"],
       "allowedVersions": "<=5"
     },
     {
-      "packageNames": ["camelcase", "del", "into-stream"],
+      "packageNames": ["camelcase", "del", "into-stream", "p-queue"],
       "allowedVersions": "<=6"
     },
     {
-      "packageNames": ["decompress-response"],
+      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"],
       "allowedVersions": "<=7"
     },
     {
