@@ -2,7 +2,6 @@
 
 [![Test](https://github.com/sanity-io/renovate-presets/actions/workflows/test.yml/badge.svg)](https://github.com/sanity-io/renovate-presets/actions/workflows/test.yml)
 [![🤖 Auto Prettier ✨](https://github.com/sanity-io/renovate-presets/actions/workflows/prettier.yml/badge.svg)](https://github.com/sanity-io/renovate-presets/actions/workflows/prettier.yml)
-[![🤖 Auto studio-v3.json ✨](https://github.com/sanity-io/renovate-presets/actions/workflows/sync-studio-v3.yml/badge.svg?event=schedule)](https://github.com/sanity-io/renovate-presets/actions/workflows/sync-studio-v3.yml)
 
 ## Usage
 
