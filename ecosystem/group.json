@@ -1,27 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "group:codemirror",
-    "group:commitlintMonorepo",
-    "group:denoMonorepo",
-    "group:dnd-kitMonorepo",
-    "group:docusaurusMonorepo",
-    "group:formatjsMonorepo",
-    "group:gatsbyMonorepo",
-    "group:istanbuljsMonorepo",
-    "group:jestMonorepo",
+    "group:recommended",
+    "group:monorepos",
     "group:linters",
-    "group:lodashMonorepo",
-    "group:nextjsMonorepo",
-    "group:nuxtjsMonorepo",
-    "group:playwrightMonorepo",
-    "group:polymer",
-    "group:postcss",
-    "group:remixMonorepo",
-    "group:semantic-releaseMonorepo",
-    "group:storybookMonorepo",
-    "group:vitestMonorepo",
-    "group:webdriverioMonorepo"
+    "group:postcss"
   ],
   "packageRules": [
     {
