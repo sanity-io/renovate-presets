@@ -7,7 +7,7 @@
     },
     {
       "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
-      "extends": ["schedule:daily"]
+      "extends": ["schedule:weekly"]
     },
     {
       "depTypeList": ["packageManager", "engines"],
