@@ -16,8 +16,6 @@
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "extends": [
-      "schedule:quarterly"
-    ]
+    "extends": ["schedule:quarterly"]
   }
 }
