@@ -3,7 +3,9 @@
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
-      "schedule": ["schedule:monthly"]
+      "schedule": [
+    "before 3am on the first day of the month"
+  ]
     },
     {
       "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
