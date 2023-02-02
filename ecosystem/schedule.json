@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
-      "schedule": ["before 4am on sunday"]
+      "schedule": ["schedule:monthly"]
     },
     {
       "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
