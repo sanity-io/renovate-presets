@@ -8,6 +8,10 @@
     {
       "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
       "extends": ["schedule:daily"]
+    },
+    {
+      "depTypeList": ["packageManager", "engines"],
+      "extends": ["schedule:yearly"]
     }
   ],
   "lockFileMaintenance": {
