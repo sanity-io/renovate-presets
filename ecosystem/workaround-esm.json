@@ -3,7 +3,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packageNames": ["arrify", "is-retry-allowed", "is-stream", "p-filter", "to-readable-stream"],
+      "packageNames": [
+        "arrify",
+        "is-retry-allowed",
+        "is-stream",
+        "p-filter",
+        "to-readable-stream"
+      ],
       "allowedVersions": "<=2"
     },
     {
