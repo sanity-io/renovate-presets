@@ -8,7 +8,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/client": "^3.4.1",
+    "@sanity/client": "^5.2.2",
     "fast-glob": "^3.2.12",
     "json-schema-remote": "^1.6.2"
   },
