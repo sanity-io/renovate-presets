@@ -1,11 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Groups major dependency updates by their monorepo or semantic grouping, puts all minor and patch update types in single PRs to reduce churn",
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/group"],
   "packageRules": [
-    {
-      "updateTypes": ["major"],
-      "extends": ["github>sanity-io/renovate-presets//ecosystem/group"]
-    },
     {
       "depTypeList": ["dependencies"],
       "updateTypes": ["patch", "minor"],
