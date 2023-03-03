@@ -1,0 +1,50 @@
+---
+name: Maintain json sorting
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'ecosystem/**/*.json'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: Is json sorted? 🤔
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # for gr2m/create-or-update-pull-request-action to push local changes
+      pull-requests: write # for gr2m/create-or-update-pull-request-action to create a PR
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Needed for the secrets.GH_PR_TOKEN to be able to override GITHUB_TOKEN later
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: lts/*
+      - run: npm ci --ignore-scripts
+      - run: npm run update:sorting
+      # @TODO re-enable after https://github.com/gr2m/create-or-update-pull-request-action/issues/537 is fixed
+      # - uses: gr2m/create-or-update-pull-request-action@v1.9.2
+      - uses: gr2m/create-or-update-pull-request-action@v1.x
+        env:
+          # This custom token is how we're able to have all the CI run tests on the automated PR, GitHub's default token will cause them to skip
+          GITHUB_TOKEN: ${{ secrets.GH_PR_TOKEN }}
+        with:
+          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: actions/create-sorting-pr
+          title: 'chore(sorting): apply sorting'
+          body: A robot ran `npm run update:sorting` and made this PR.
+          commit-message: 'chore(sorting): apply sorting'
+          labels: 🤖 bot
