@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Groups major dependency updates by their monorepo or semantic grouping, puts all minor and patch update types in single PRs to reduce churn",
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies"],
+      "groupName": "dependencies (non-major)",
+      "updateTypes": ["minor", "patch"]
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "excludePackageNames": ["typescript"],
+      "groupName": "devDependencies (non-major)",
+      "updateTypes": ["minor", "patch"]
+    },
+    {
+      "depTypeList": ["resolutions"],
+      "groupName": "resolutions (non-major)",
+      "updateTypes": ["minor", "patch"]
+    }
+  ]
+}
