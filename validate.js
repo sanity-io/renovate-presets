@@ -1,7 +1,7 @@
 import fs from 'fast-glob'
 import validator from 'json-schema-remote'
-import { readFile } from 'fs/promises'
-import { get } from 'https'
+import { readFile } from 'node:fs/promises'
+import { get } from 'node:https'
 
 const [schema, files] = await Promise.all([
   (async () =>

@@ -16,7 +16,8 @@
       "extends": ["group:sanityMonorepo"],
       "groupName": "sanity packages",
       "packageNames": ["sanity", "next-sanity"],
-      "packagePatterns": ["^@sanity/", "^@portable-text/", "sanity-plugin-*"]
+      "packagePatterns": ["^@sanity/", "^@portable-text/", "sanity-plugin-*"],
+      "schedule": ["at any time"]
     },
     {
       "groupName": "typescript packages",
