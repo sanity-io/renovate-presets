@@ -3,7 +3,8 @@
   "scripts": {
     "test": "node validate",
     "postupdate:node": "npx prettier --write ecosystem/node.json",
-    "update:node": "node update-node.js"
+    "update:node": "node update-node.js",
+    "prettier": "prettier --ignore-path .gitignore --cache --write ."
   },
   "prettier": {
     "semi": false,
