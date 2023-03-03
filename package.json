@@ -1,10 +1,10 @@
 {
   "type": "module",
   "scripts": {
+    "prettier": "prettier --ignore-path .gitignore --cache --write .",
     "test": "node validate",
-    "postupdate:node": "npx prettier --write ecosystem/node.json",
     "update:node": "node update-node.js",
-    "prettier": "prettier --ignore-path .gitignore --cache --write ."
+    "postupdate:node": "npx prettier --write ecosystem/node.json"
   },
   "prettier": {
     "semi": false,
