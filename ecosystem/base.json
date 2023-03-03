@@ -1,11 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
     ":semanticCommits",
-    "replacements:all",
-    "github>sanity-io/renovate-presets//ecosystem/branding"
+    "config:base",
+    "github>sanity-io/renovate-presets//ecosystem/branding",
+    "replacements:all"
   ],
-  "ignorePresets": [":ignoreModulesAndTests"],
-  "ignorePaths": []
+  "ignorePaths": [],
+  "ignorePresets": [":ignoreModulesAndTests"]
 }

@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "group:recommended",
-    "group:monorepos",
     "group:linters",
-    "group:postcss"
+    "group:monorepos",
+    "group:postcss",
+    "group:recommended"
   ],
   "packageRules": [
     {
@@ -15,13 +15,13 @@
     {
       "extends": ["group:sanityMonorepo"],
       "groupName": "sanity packages",
-      "packageNames": ["sanity", "next-sanity"],
-      "packagePatterns": ["^@sanity/", "^@portable-text/", "sanity-plugin-*"],
+      "packageNames": ["next-sanity", "sanity"],
+      "packagePatterns": ["^@portable-text/", "^@sanity/", "sanity-plugin-*"],
       "schedule": ["at any time"]
     },
     {
       "groupName": "typescript packages",
-      "packageNames": ["typescript", "type-fest"],
+      "packageNames": ["type-fest", "typescript"],
       "packagePatterns": ["^@types/"]
     },
     {
@@ -35,12 +35,11 @@
     },
     {
       "groupName": "grunt packages",
-      "packagePatterns": ["^grunt-"],
-      "packageNames": ["grunt", "load-grunt-tasks"]
+      "packageNames": ["grunt", "load-grunt-tasks"],
+      "packagePatterns": ["^grunt-"]
     },
     {
       "groupName": "webpack packages",
-      "packagePatterns": ["^webpack", "-webpack-plugin$"],
       "packageNames": [
         "babel-loader",
         "css-loader",
@@ -54,7 +53,8 @@
         "style-loader",
         "url-loader",
         "vue-loader"
-      ]
+      ],
+      "packagePatterns": ["-webpack-plugin$", "^webpack"]
     },
     {
       "groupName": "rollup packages",
@@ -70,23 +70,23 @@
     },
     {
       "groupName": "refractor",
-      "packageNames": ["refractor", "react-refractor"]
+      "packageNames": ["react-refractor", "refractor"]
     },
     {
-      "extends": ["monorepo:babel6", "monorepo:babel"],
+      "extends": ["monorepo:babel", "monorepo:babel6"],
       "groupName": "babel"
     },
     {
       "extends": "packages:linters",
       "groupName": "linters",
       "packageNames": [
+        "@nuxtjs/eslint-config",
+        "babel-eslint",
         "husky",
         "lint-staged",
         "prettier",
-        "babel-eslint",
-        "prettier-package-json",
         "prettier-eslint-cli",
-        "@nuxtjs/eslint-config"
+        "prettier-package-json"
       ]
     }
   ]
