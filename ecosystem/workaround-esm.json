@@ -1,18 +1,19 @@
 {
-  "description": "Workaround packages that have moved to become ESM-only",
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Workaround packages that have moved to become ESM-only",
   "packageRules": [
     {
+      "allowedVersions": "<=2",
       "packageNames": [
         "arrify",
         "is-retry-allowed",
         "is-stream",
         "p-filter",
         "to-readable-stream"
-      ],
-      "allowedVersions": "<=2"
+      ]
     },
     {
+      "allowedVersions": "<=3",
       "packageNames": [
         "clean-stack",
         "file-url",
@@ -20,10 +21,10 @@
         "leven",
         "p-any",
         "pkg-up"
-      ],
-      "allowedVersions": "<=3"
+      ]
     },
     {
+      "allowedVersions": "<=4",
       "packageNames": [
         "chalk",
         "log-symbols",
@@ -32,44 +33,43 @@
         "p-props",
         "p-timeout",
         "xdg-basedir"
-      ],
-      "allowedVersions": "<=4"
+      ]
     },
     {
-      "packageNames": ["boxen", "execa", "ora", "pretty-bytes", "pkg-dir"],
-      "allowedVersions": "<=5"
+      "allowedVersions": "<=5",
+      "packageNames": ["boxen", "execa", "ora", "pkg-dir", "pretty-bytes"]
     },
     {
-      "packageNames": ["camelcase", "del", "into-stream", "p-queue"],
-      "allowedVersions": "<=6"
+      "allowedVersions": "<=6",
+      "packageNames": ["camelcase", "del", "into-stream", "p-queue"]
     },
     {
-      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"],
-      "allowedVersions": "<=7"
+      "allowedVersions": "<=7",
+      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"]
     },
     {
-      "packageNames": ["inquirer"],
-      "allowedVersions": "<=8"
+      "allowedVersions": "<=8",
+      "packageNames": ["inquirer"]
     },
     {
-      "packageNames": ["meow"],
-      "allowedVersions": "<=9"
+      "allowedVersions": "<=9",
+      "packageNames": ["meow"]
     },
     {
-      "packageNames": ["globby"],
-      "allowedVersions": "<=11"
+      "allowedVersions": "<=11",
+      "packageNames": ["globby"]
     },
     {
       "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
-      "packageNames": ["node-fetch"],
-      "followTag": "cjs"
+      "followTag": "cjs",
+      "packageNames": ["node-fetch"]
     },
     {
+      "allowedVersions": "<=27",
       "description": "jest v28 and later introduces a very problematic behavior with ESM that doesn't interop out of the box with Node16's ESM support",
       "extends": ["monorepo:jest"],
-      "packageNames": ["@types/jest", "ts-jest"],
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "allowedVersions": "<=27"
+      "packageNames": ["@types/jest", "ts-jest"]
     }
   ]
 }
