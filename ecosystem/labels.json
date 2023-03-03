@@ -1,37 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
+    {"labels": ["🤖 bot", "📦 deps"]},
     {
-      "updateTypes": ["major"],
-      "labels": ["dependencies", "major"]
-    },
-    {
-      "updateTypes": ["minor"],
-      "labels": ["dependencies", "minor"]
-    },
-    {
-      "updateTypes": ["patch"],
-      "labels": ["dependencies", "patch"]
-    },
-    {
-      "updateTypes": ["pin"],
-      "labels": ["dependencies", "pin"]
-    },
-    {
-      "updateTypes": ["digest"],
-      "labels": ["dependencies", "digest"]
-    },
-    {
-      "updateTypes": ["lockFileMaintenance"],
-      "labels": ["dependencies", "lockFileMaintenance"]
-    },
-    {
-      "updateTypes": ["rollback"],
-      "labels": ["dependencies", "rollback"]
-    },
-    {
-      "updateTypes": ["bump"],
-      "labels": ["dependencies", "bump"]
+      "labels": ["⚠️ major"],
+      "updateTypes": ["major"]
     }
   ]
 }
