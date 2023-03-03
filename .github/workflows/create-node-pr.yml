@@ -31,7 +31,9 @@ jobs:
           node-version: lts/*
       - run: npm ci --ignore-scripts
       - run: npm run update:node
-      - uses: gr2m/create-or-update-pull-request-action@df20b2c073090271599a08c55ae26e0c3522b329 # v1.9.2
+      # @TODO re-enable after https://github.com/gr2m/create-or-update-pull-request-action/issues/537 is fixed
+      # - uses: gr2m/create-or-update-pull-request-action@v1.9.2
+      - uses: gr2m/create-or-update-pull-request-action@v1.x
         env:
           # This custom token is how we're able to have all the CI run tests on the automated PR, GitHub's default token will cause them to skip
           GITHUB_TOKEN: ${{ secrets.GH_PR_TOKEN }}
