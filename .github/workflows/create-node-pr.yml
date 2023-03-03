@@ -39,8 +39,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PR_TOKEN }}
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          branch: actions/create-node-pr
-          title: 'feat(node): update major'
           body: A robot ran `npm run update:node` and made this PR.
+          branch: actions/create-node-pr
           commit-message: 'feat(node): update major version to latest LTS'
           labels: 🤖 bot
+          team_reviewers: ecosystem
+          title: 'feat(node): update major'
