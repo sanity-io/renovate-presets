@@ -1,7 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
-    {"labels": ["🤖 bot", "📦 deps"]},
+    {
+      "labels": ["📦 deps", "🤖 bot"]
+    },
     {
       "labels": ["⚠️ major"],
       "updateTypes": ["major"]
