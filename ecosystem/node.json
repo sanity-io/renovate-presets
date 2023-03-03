@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "description": "Only allow PRs that updates NodeJS to the latest LTS, instead of Current",
-      "packageNames": ["cimg/node", "circleci/node","node"],
+      "packageNames": ["cimg/node", "circleci/node", "node"],
       "allowedVersions": "<=16",
       "schedule": ["at any time"]
     }

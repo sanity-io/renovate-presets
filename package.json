@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "test": "node validate"
+    "test": "node validate",
+    "postupdate:node": "npx prettier --write ecosystem/node.json",
+    "update:node": "node update-node.js"
   },
   "prettier": {
     "semi": false,
@@ -9,6 +11,7 @@
   },
   "dependencies": {
     "@sanity/client": "^5.2.2",
+    "@types/node": "^18.14.6",
     "fast-glob": "^3.2.12",
     "json-schema-remote": "^1.6.2"
   },

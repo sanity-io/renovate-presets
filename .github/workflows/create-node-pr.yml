@@ -1,0 +1,44 @@
+---
+name: Maintain node.json
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: Is node.json outdated? 🤔
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # for gr2m/create-or-update-pull-request-action to push local changes
+      pull-requests: write # for gr2m/create-or-update-pull-request-action to create a PR
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Needed for the secrets.GH_PR_TOKEN to be able to override GITHUB_TOKEN later
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: lts/*
+      - run: npm ci --ignore-scripts
+      - run: npm run update:node
+      - uses: gr2m/create-or-update-pull-request-action@v1.9.1
+        env:
+          # This custom token is how we're able to have all the CI run tests on the automated PR, GitHub's default token will cause them to skip
+          GITHUB_TOKEN: ${{ secrets.GH_PR_TOKEN }}
+        with:
+          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
+          branch: actions/create-node-pr
+          title: 'feat(node): update major'
+          body: A robot ran `npm run update:node` and made this PR.
+          commit-message: 'feat(node): update major version to latest LTS'
+          labels: 🤖 bot
