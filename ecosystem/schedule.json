@@ -11,7 +11,7 @@
     },
     {
       "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
-      "extends": ["schedule:weekly"]
+      "schedule": ["before 3am on Monday"]
     },
     {
       "depTypeList": ["engines", "packageManager"],
