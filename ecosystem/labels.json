@@ -5,7 +5,7 @@
       "labels": ["📦 deps", "🤖 bot"]
     },
     {
-      "labels": ["📦 deps", "🤖 bot", "⚠️ major"],
+      "labels": ["⚠️ major", "📦 deps", "🤖 bot"],
       "updateTypes": ["major"]
     }
   ]
