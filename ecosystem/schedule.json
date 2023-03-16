@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-   "extends": [
-    "github>sanity-io/renovate-presets//ecosystem/schedule-limits"
-  ],
+  "extends": ["github>sanity-io/renovate-presets//ecosystem/schedule-limits"],
   "lockFileMaintenance": {
     "enabled": true,
     "extends": ["schedule:quarterly"]
