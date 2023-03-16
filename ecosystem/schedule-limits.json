@@ -1,8 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "As github>sanity-io/renovate-presets//ecosystem/schedule runs renovate infrequently, it makes sense to remove certain limits as it could be a long time until the next opportunity for a specific update",
-    "extends": [
-    ":prConcurrentLimitNone",
-":prHourlyLimitNone"
-  ]
+  "extends": [":prConcurrentLimitNone", ":prHourlyLimitNone"]
 }
