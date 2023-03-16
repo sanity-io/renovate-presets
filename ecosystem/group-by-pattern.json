@@ -75,10 +75,10 @@
     {
       "groupName": "ioredis",
       "packageNames": [
-        "ioredis",
-        "ioredis-mock",
         "@types/ioredis",
-        "@types/ioredis-mock"
+        "@types/ioredis-mock",
+        "ioredis",
+        "ioredis-mock"
       ]
     },
     {
