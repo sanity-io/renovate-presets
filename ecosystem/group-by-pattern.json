@@ -74,7 +74,12 @@
     },
     {
       "groupName": "ioredis",
-      "packageNames": ["ioredis", "ioredis-mock", "@types/ioredis", "@types/ioredis-mock"]
+      "packageNames": [
+        "ioredis",
+        "ioredis-mock",
+        "@types/ioredis",
+        "@types/ioredis-mock"
+      ]
     },
     {
       "extends": ["monorepo:babel", "monorepo:babel6"],
