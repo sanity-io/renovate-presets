@@ -30,6 +30,7 @@
       ],
       "replacementName": "sanity",
       "replacementVersion": "^3.0.0",
+      "prPriority": 5,
       "schedule": ["at any time"]
     }
   ]
