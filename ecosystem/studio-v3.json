@@ -28,9 +28,9 @@
         "@sanity/default-login",
         "@sanity/desk-tool"
       ],
+      "prPriority": 5,
       "replacementName": "sanity",
       "replacementVersion": "^3.0.0",
-      "prPriority": 5,
       "schedule": ["at any time"]
     }
   ]
