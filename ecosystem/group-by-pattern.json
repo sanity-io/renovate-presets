@@ -74,7 +74,7 @@
     },
     {
       "groupName": "semantic-release",
-      "packageNames": ["semantic-release", "@sanity/semantic-release-preset"]
+      "packageNames": ["@sanity/semantic-release-preset", "semantic-release"]
     },
     {
       "groupName": "ioredis",
