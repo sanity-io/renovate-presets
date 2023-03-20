@@ -73,6 +73,10 @@
       "packageNames": ["react-refractor", "refractor"]
     },
     {
+      "groupName": "semantic-release",
+      "packageNames": ["semantic-release", "@sanity/semantic-release-preset"]
+    },
+    {
       "groupName": "ioredis",
       "packageNames": [
         "@types/ioredis",
