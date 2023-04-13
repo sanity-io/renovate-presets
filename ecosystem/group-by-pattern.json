@@ -16,7 +16,7 @@
       "extends": ["group:sanityMonorepo"],
       "groupName": "sanity packages",
       "packageNames": ["next-sanity", "sanity"],
-      "packagePatterns": ["^@portable-text/", "^@sanity/", "sanity-plugin-*"],
+      "packagePatterns": ["^@portabletext/", "^@sanity/", "sanity-plugin-*"],
       "schedule": ["at any time"]
     },
     {
