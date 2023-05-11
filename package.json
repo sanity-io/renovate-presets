@@ -13,7 +13,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/client": "^5.3.0",
+    "@sanity/client": "^6.0.0",
     "@types/node": "^18.15.3",
     "fast-glob": "^3.2.12",
     "json-schema-remote": "^1.6.2",
