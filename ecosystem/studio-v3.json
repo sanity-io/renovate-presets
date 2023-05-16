@@ -22,7 +22,6 @@
       "matchDatasources": ["npm"],
       "matchPackageNames": [
         "@sanity/base",
-        "@sanity/cli",
         "@sanity/core",
         "@sanity/default-layout",
         "@sanity/default-login",
