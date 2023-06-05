@@ -32,8 +32,8 @@
         "p-map",
         "p-props",
         "p-timeout",
-        "xdg-basedir",
-        "string-width"
+        "string-width",
+        "xdg-basedir"
       ]
     },
     {
