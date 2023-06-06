@@ -2,6 +2,8 @@
 
 A central place to add and maintain sanity.io related renovate presets (https://docs.renovatebot.com/config-presets)
 
+
+
 ## sanity-template
 
 This preset will automerge all `@sanity` and `sanity-plugin-*` packages
