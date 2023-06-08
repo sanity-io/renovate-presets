@@ -1,5 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Alias to new name",
-  "extends": ["github>sanity-io/renovate-presets//ecosystem/group-after-types"]
+  "extends": ["github>sanity-io/renovate-config:group-non-major"]
 }

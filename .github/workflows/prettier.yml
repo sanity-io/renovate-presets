@@ -23,22 +23,21 @@ jobs:
         with:
           cache: npm
           node-version: lts/*
-      - run: npm ci --ignore-scripts --only-dev
-      - uses: actions/cache@v3
-        with:
-          path: node_modules/.cache/prettier/.prettier-cache
-          key: prettier-${{ hashFiles('package-lock.json') }}-${{ hashFiles('.gitignore') }}
-      - run: npm run prettier
+      - run: npx prettier --ignore-path .gitignore --write .
       - run: git restore .github/workflows
       - uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92 # v1
         id: generate-token
+        if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
+        env:
+          HAVE_ECOSPARK_APP_ID: ${{ secrets.ECOSPARK_APP_ID != '' }}
         with:
           app_id: ${{ secrets.ECOSPARK_APP_ID }}
           private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
       - uses: peter-evans/create-pull-request@5b4a9f6a9e2af26e5f02351490b90d01eb8ec1e5 # v5
+        if: ${{ steps.generate-token.outputs.token != '' }}
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          body: I ran `npm run prettier` 👨‍💻
+          body: I ran `npx prettier --ignore-path .gitignore --write .` 🧑‍💻
           branch: actions/prettier-if-needed
           commit-message: 'chore(prettier): 🤖 ✨'
           labels: 🤖 bot

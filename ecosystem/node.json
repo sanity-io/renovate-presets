@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Only allow PRs that updates NodeJS to the latest LTS, instead of Current",
-  "packageRules": [
-    {
-      "allowedVersions": "<=18",
-      "description": "Only allow PRs that updates NodeJS to the latest LTS, instead of Current",
-      "packageNames": ["cimg/node", "circleci/node", "node"],
-      "schedule": ["at any time"]
-    }
-  ]
+  "extends": ["github>sanity-io/renovate-config:node-lts"]
 }

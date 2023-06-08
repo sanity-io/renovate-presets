@@ -1,16 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Configures Renovate Bot to follow best practices as determined by the Ecosystem team at Sanity",
-  "extends": [
-    "github>sanity-io/renovate-presets//ecosystem/base",
-    "github>sanity-io/renovate-presets//ecosystem/group-after-types",
-    "github>sanity-io/renovate-presets//ecosystem/group-by-pattern",
-    "github>sanity-io/renovate-presets//ecosystem/labels",
-    "github>sanity-io/renovate-presets//ecosystem/node",
-    "github>sanity-io/renovate-presets//ecosystem/schedule",
-    "github>sanity-io/renovate-presets//ecosystem/security",
-    "github>sanity-io/renovate-presets//ecosystem/strategy",
-    "github>sanity-io/renovate-presets//ecosystem/workaround-esm",
-    "workarounds:all"
-  ]
+  "extends": ["github>sanity-io/renovate-config"]
 }

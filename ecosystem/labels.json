@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packageRules": [
-    {
-      "labels": ["📦 deps", "🤖 bot"]
-    },
-    {
-      "labels": ["⚠️ major", "📦 deps", "🤖 bot"],
-      "updateTypes": ["major"]
-    }
-  ]
+  "extends": ["github>sanity-io/renovate-config:labels"]
 }

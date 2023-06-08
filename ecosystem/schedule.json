@@ -1,22 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-presets//ecosystem/schedule-limits"],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": ["schedule:quarterly"]
-  },
-  "packageRules": [
-    {
-      "depTypeList": ["devDependencies"],
-      "schedule": ["before 3am on the first day of the month"]
-    },
-    {
-      "depTypeList": ["dependencies", "peerDependencies", "resolutions"],
-      "schedule": ["before 3am on Monday"]
-    },
-    {
-      "depTypeList": ["engines", "packageManager"],
-      "extends": ["schedule:yearly"]
-    }
-  ]
+  "extends": ["github>sanity-io/renovate-config:schedule"]
 }

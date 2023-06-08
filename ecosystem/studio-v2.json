@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Stay up to date to Sanity Studio v2, and update plugins in a single PR",
-  "packageRules": [
-    {
-      "allowedVersions": "<=17",
-      "description": "Sanity studio isn't ready for React v18 yet",
-      "enabled": true,
-      "matchPackagePrefixes": ["@types/react", "react"]
-    }
-  ]
+  "extends": ["github>sanity-io/renovate-config:studio-v2"]
 }

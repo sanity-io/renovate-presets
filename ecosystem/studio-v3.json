@@ -1,36 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Stay up to date to Sanity Studio v3, and when it reaches stable release this preset will create PRs for you that migrates your studio as well as all your plugins in a single PR",
-  "packageRules": [
-    {
-      "allowedVersions": "<=18",
-      "description": "Sanity studio v3 requires React v18",
-      "enabled": true,
-      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "matchPackagePrefixes": ["@types/react", "react"]
-    },
-    {
-      "depTypeList": ["peerDependencies"],
-      "description": "Ensures the peerDependencies sanity entry is v3 compatible",
-      "groupName": "sanity-studio-v3-widen",
-      "packageNames": ["sanity"],
-      "rangeStrategy": "widen",
-      "schedule": ["at any time"]
-    },
-    {
-      "description": "Studio v3 is now a single dependency instead of multiple",
-      "matchDatasources": ["npm"],
-      "matchPackageNames": [
-        "@sanity/base",
-        "@sanity/core",
-        "@sanity/default-layout",
-        "@sanity/default-login",
-        "@sanity/desk-tool"
-      ],
-      "prPriority": 5,
-      "replacementName": "sanity",
-      "replacementVersion": "^3.0.0",
-      "schedule": ["at any time"]
-    }
-  ]
+  "extends": ["github>sanity-io/renovate-config:studio-v3"]
 }
